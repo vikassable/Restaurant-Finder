@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Find Restaurant</string>
+    <string name="action_search">Search</string>
+    <string name="search_suggestion">Find Restaurants using City Name</string>
+    <string name="error_message">No result found!! Please enter correct City name</string>
+</resources>

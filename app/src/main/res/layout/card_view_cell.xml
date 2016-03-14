@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <!-- A CardView that contains a TextView -->
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="4dp"
+        card_view:cardUseCompatPadding="true">
+
+        <TextView
+            android:id="@+id/info_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp">
+
+            <ImageView
+                android:id="@+id/resta_imageView"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/restaurant"
+
+                android:layout_margin="2dp"
+                />
+
+            <TextView
+                android:layout_margin="1dp"
+                android:id="@+id/name_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/resta_imageView"
+                android:text="This is restarant"
+                style="@android:style/TextAppearance.Material.Large"
+
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_margin="1dp"
+                android:id="@+id/address_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name_textView"
+                android:layout_toEndOf="@id/resta_imageView"
+                android:text="this is arlington jsljks "
+               style="@android:style/TextAppearance.Material.Medium"
+                />
+            <TextView
+                android:layout_margin="1dp"
+                android:id="@+id/type_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/address_textView"
+                android:layout_toEndOf="@id/resta_imageView"
+                android:text="this is arlington"
+                style="@android:style/TextAppearance.Material.Small"
+                />
+            <RatingBar
+                android:layout_margin="1dp"
+                style="@android:style/Widget.Material.RatingBar.Indicator"
+                android:id="@+id/rating_ratingView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/type_textView"
+                android:layout_toRightOf="@id/resta_imageView"
+                android:numStars="5"
+                android:rating="4"
+                android:isIndicator="true"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
